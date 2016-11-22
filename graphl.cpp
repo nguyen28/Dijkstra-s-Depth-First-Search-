@@ -26,19 +26,10 @@ GraphL::GraphL()
 }
 
 //*************************Deconstructor*****************************//
-//Sets array to set data nad edgehead to Null and all visited to false.
+//deletes all pointers and resets data to NULL
 //*****************************************************************//
 
 GraphL::~GraphL()
-{
-    makeEmpty();
-}
-
-//*************************empty*****************************//
-//deletes the array and pointers, used in deconstructor
-//*****************************************************************//
-
-void GraphL::makeEmpty()
 {
     for (int i = 1; i <= size; ++i)
     {
