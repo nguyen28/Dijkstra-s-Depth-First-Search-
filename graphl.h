@@ -16,7 +16,6 @@
 #include <stdio.h>
 using namespace std;
 
-
 int const MAXNODES_L = 101;  // const size of an array
 
 class GraphL
@@ -51,9 +50,6 @@ private:
         int adjGraphNode;           // subscript of the adjacent graph node
         EdgeNode* nextEdge;         // next node
     };
-    
-    // Delete object
-    void makeEmpty();
     
     // helper function
     void helpDFS(int visited);
